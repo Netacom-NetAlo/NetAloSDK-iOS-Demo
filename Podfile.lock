@@ -1,0 +1,162 @@
+PODS:
+  - AxolotlKit (0.9.0):
+    - CocoaLumberjack
+    - Curve25519Kit (~> 2.1.0)
+    - HKDFKit (~> 0.0.3)
+    - SignalCoreKit
+    - SwiftProtobuf
+  - CocoaLumberjack (3.7.0):
+    - CocoaLumberjack/Core (= 3.7.0)
+  - CocoaLumberjack/Core (3.7.0)
+  - Curve25519Kit (2.1.0):
+    - CocoaLumberjack
+    - SignalCoreKit
+  - GoogleWebRTC (1.1.31999)
+  - GRKOpenSSLFramework (1.0.2.19)
+  - HKDFKit (0.0.4):
+    - CocoaLumberjack
+    - SignalCoreKit
+  - InputBarAccessoryView (4.3.3):
+    - InputBarAccessoryView/Core (= 4.3.3)
+  - InputBarAccessoryView/Core (4.3.3)
+  - Kingfisher (5.15.8):
+    - Kingfisher/Core (= 5.15.8)
+  - Kingfisher/Core (5.15.8)
+  - Localize-Swift (3.1.0)
+  - MessageKit (3.1.0):
+    - InputBarAccessoryView (~> 4.3.0)
+  - NetaloCommonSDK (1.0.1)
+  - Reachability (3.2)
+  - Realm (5.3.5):
+    - Realm/Headers (= 5.3.5)
+  - Realm/Headers (5.3.5)
+  - RealmSwift (5.3.5):
+    - Realm (= 5.3.5)
+  - ReSwift (4.1.1)
+  - ReSwiftThunk (1.1.0):
+    - ReSwift (~> 4.0)
+  - SignalCoreKit (1.0.0):
+    - CocoaLumberjack
+    - GRKOpenSSLFramework
+  - Socket.IO-Client-Swift (14.0.0):
+    - Starscream (~> 3.0.6)
+  - Starscream (3.0.6)
+  - SwiftProtobuf (1.15.0)
+  - SwipeTransition (0.4.3)
+  - ZIPFoundation (0.9.11)
+
+DEPENDENCIES:
+  - AxolotlKit (from `https://github.com/signalapp/SignalProtocolKit.git`, branch `master`)
+  - Curve25519Kit (from `https://github.com/signalapp/Curve25519Kit`)
+  - GoogleWebRTC (~> 1.1)
+  - GRKOpenSSLFramework (from `https://github.com/signalapp/GRKOpenSSLFramework`, branch `mkirk/1.0.2t`)
+  - HKDFKit (from `https://github.com/signalapp/HKDFKit.git`)
+  - Kingfisher (~> 5.15)
+  - Localize-Swift (from `http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift`)
+  - MessageKit (from `http://gitlab.ecdc.vn/hieubui/nt-messagekit`)
+  - NetaloCommonSDK (from `http://gitlab.ecdc.vn/hieubui/NetaloCommonSDK`, branch `lomo-v11`)
+  - Reachability (~> 3.2)
+  - RealmSwift (= 5.3.5)
+  - ReSwift (~> 4.1.1)
+  - ReSwiftThunk (from `https://github.com/thanhphong-tran/ReSwift-Thunk.git`, tag `1.1.1`)
+  - SignalCoreKit (from `https://github.com/signalapp/SignalCoreKit.git`)
+  - Socket.IO-Client-Swift (= 14.0.0)
+  - SwipeTransition (~> 0.4.2)
+  - ZIPFoundation (~> 0.9)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - GoogleWebRTC
+    - InputBarAccessoryView
+    - Kingfisher
+    - Reachability
+    - Realm
+    - RealmSwift
+    - ReSwift
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftProtobuf
+    - SwipeTransition
+    - ZIPFoundation
+
+EXTERNAL SOURCES:
+  AxolotlKit:
+    :branch: master
+    :git: https://github.com/signalapp/SignalProtocolKit.git
+  Curve25519Kit:
+    :git: https://github.com/signalapp/Curve25519Kit
+  GRKOpenSSLFramework:
+    :branch: mkirk/1.0.2t
+    :git: https://github.com/signalapp/GRKOpenSSLFramework
+  HKDFKit:
+    :git: https://github.com/signalapp/HKDFKit.git
+  Localize-Swift:
+    :git: http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift
+  MessageKit:
+    :git: http://gitlab.ecdc.vn/hieubui/nt-messagekit
+  NetaloCommonSDK:
+    :branch: lomo-v11
+    :git: http://gitlab.ecdc.vn/hieubui/NetaloCommonSDK
+  ReSwiftThunk:
+    :git: https://github.com/thanhphong-tran/ReSwift-Thunk.git
+    :tag: 1.1.1
+  SignalCoreKit:
+    :git: https://github.com/signalapp/SignalCoreKit.git
+
+CHECKOUT OPTIONS:
+  AxolotlKit:
+    :commit: 06c654a757bce35111723655634299f78bb93460
+    :git: https://github.com/signalapp/SignalProtocolKit.git
+  Curve25519Kit:
+    :commit: 4fc1c10e98fff2534b5379a9bb587430fdb8e577
+    :git: https://github.com/signalapp/Curve25519Kit
+  GRKOpenSSLFramework:
+    :commit: 4d9944de35ed56a95879c5a8a1b410ae03f71d57
+    :git: https://github.com/signalapp/GRKOpenSSLFramework
+  HKDFKit:
+    :commit: b6985abcacda0292b82785ba93b8be47c0d608b6
+    :git: https://github.com/signalapp/HKDFKit.git
+  Localize-Swift:
+    :commit: 0af65d3b780e547074d6d9b992e2e27a98a9a35c
+    :git: http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift
+  MessageKit:
+    :commit: 29bb4c4f94bacf966633ba25475a9700c9622e88
+    :git: http://gitlab.ecdc.vn/hieubui/nt-messagekit
+  NetaloCommonSDK:
+    :commit: 125ee8c64ac950c2af528a8b1415f700765839b3
+    :git: http://gitlab.ecdc.vn/hieubui/NetaloCommonSDK
+  ReSwiftThunk:
+    :git: https://github.com/thanhphong-tran/ReSwift-Thunk.git
+    :tag: 1.1.1
+  SignalCoreKit:
+    :commit: 64410ab6b3b8f6c082d5cf6ddd7d58915b997c75
+    :git: https://github.com/signalapp/SignalCoreKit.git
+
+SPEC CHECKSUMS:
+  AxolotlKit: ac03e4d79486b62d08282c840da410116227683e
+  CocoaLumberjack: e8955b9d337ac307103b0a34fd141c32f27e53c5
+  Curve25519Kit: e63f9859ede02438ae3defc5e1a87e09d1ec7ee6
+  GoogleWebRTC: b39a78c4f5cc6b0323415b9233db03a2faa7b0f0
+  GRKOpenSSLFramework: 4abc733a8fcbc37060619a86a54202d2938dd70e
+  HKDFKit: bd6b9566654253aa45ef60a205979ec291f00641
+  InputBarAccessoryView: 8e7fc09e9cba75e0fee5da13450e15c194806f69
+  Kingfisher: a3c03d702433fa6cfedabb2bddbe076fb8f2e902
+  Localize-Swift: 4bed4f0ccac8be2ec3517ee359da80ba2adb0fae
+  MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
+  NetaloCommonSDK: 08e85e2d845225553e96a2d6947bc33c665fb053
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  Realm: 2b52fcc86fc0ed3d75a56ac0eb1e73c4f1a60e16
+  RealmSwift: a6ea2ea561039fc3833c08dec81371a9a3bb5ca6
+  ReSwift: d925be0033558f55bd73d92869961230dfe19d52
+  ReSwiftThunk: 583012ac3ebc2c85e5e5c919b52c2b9824288105
+  SignalCoreKit: 43daa8f15d6125d54705f35628ac35051bb205c6
+  Socket.IO-Client-Swift: 21e6a8a23a7d367d5ddfab6cbbd3c679cf3c25d6
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
+  SwiftProtobuf: 3320217e9d8fb75f36b40282e78c482640fd75dd
+  SwipeTransition: 16257f6afc59a572e3b4635a329b10f7598ad269
+  ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
+
+PODFILE CHECKSUM: d1dc57863992ba3e7c333f2cd7b570c1d17d3b05
+
+COCOAPODS: 1.9.3
