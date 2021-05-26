@@ -7,8 +7,8 @@ target 'TestProject' do
 
   # Pods for TestProject
   
-  pod 'MessageKit', :git => 'http://gitlab.ecdc.vn/hieubui/nt-messagekit'
-  pod 'Localize-Swift', :git => 'http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift'
+  pod 'MessageKit', :git => 'https://github.com/thanhphong-tran/messagekit'
+  pod 'Localize-Swift', :git => 'https://github.com/thanhphong-tran/Localize-Swift'
   pod 'Kingfisher', '~> 5.15'
   pod 'ReSwift', '~> 4.1.1'
   pod 'ReSwiftThunk', git: 'https://github.com/thanhphong-tran/ReSwift-Thunk.git', :tag => '1.1.1'
@@ -26,7 +26,7 @@ target 'TestProject' do
   pod 'GRKOpenSSLFramework', git: 'https://github.com/signalapp/GRKOpenSSLFramework', branch: 'mkirk/1.0.2t'
   pod 'Socket.IO-Client-Swift', '14.0.0'
   # Note: BRANCH will be provided when actual integrate the SDK
-  pod 'NetaloCommonSDK', :git => 'http://gitlab.ecdc.vn/hieubui/NetaloCommonSDK', branch: 'lomo-v11'
+  pod 'NetaloCommonSDK', :git => 'https://github.com/thanhphong-tran/NetaloCommonSDK', branch: 'lomo-v11'
 
   target 'TestProjectTests' do
     inherit! :search_paths

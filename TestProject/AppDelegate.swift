@@ -61,40 +61,45 @@ class UserMock: NetaloUser {
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    static var shared: AppDelegate? { return UIApplication.shared.delegate as? AppDelegate}
   
-  private lazy var netaloSDK: NetaloUISDK = {
-    let preConfig = NetAloSDKConfig.dev
-    var authorizationType = AuthorizationType.phoneNumber("")
-    if let user = NetaloUISDK.authorizedUser() {
-      authorizationType = AuthorizationType.user(user)
-    }
-    
-    let config = NetaloConfiguration(
-      authorizationType: authorizationType,
-      enviroment: preConfig.env,
-      appId: preConfig.appId,
-      appKey: preConfig.appKey,
-      accountKey:preConfig.accountKey,
-      appGroupIdentifier: preConfig.appGroupIdentifier,
-      analytics: [],
-      featureConfig: FeatureConfig(
-        user: FeatureConfig.UserConfig(
-          forceUpdateProfile: true
-          // hidePhone = true, //Hide number phone
-          // hideCreateGroup = true, //Hide button create group in list conversasion
-          // hideAddInfo = true, //Hide button add contact in list chat
-          // hideInfo = true, //Hide click in info user
+    public lazy var netaloSDK: NetaloUISDK = {
+        let preConfig = NetAloSDKConfig.dev
+        var authorizationType = AuthorizationType.phoneNumber("")
+        if let user = NetaloUISDK.authorizedUser() {
+          authorizationType = AuthorizationType.user(user)
+        }
+
+        let config = NetaloConfiguration(
+          authorizationType: authorizationType,
+          enviroment: preConfig.env,
+          appId: preConfig.appId,
+          appKey: preConfig.appKey,
+          accountKey:preConfig.accountKey,
+          appGroupIdentifier: preConfig.appGroupIdentifier,
+          analytics: [],
+          featureConfig: FeatureConfig(
+            user: FeatureConfig.UserConfig(
+              forceUpdateProfile: true
+              // hidePhone = true, //Hide number phone
+              // hideCreateGroup = true, //Hide button create group in list conversasion
+              // hideAddInfo = true, //Hide button add contact in list chat
+              // hideInfo = true, //Hide click in info user
+            )
+          )
         )
-      )
-    )
+
+        return NetaloUISDK(config: config)
+    }()
     
-    return NetaloUISDK(config: config)
-  }()
+    let window = UIWindow(frame: UIScreen.main.bounds)
   
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     netaloSDK.add(delegate: self)
-    return netaloSDK.application(application, didFinishLaunchingWithOptions: launchOptions)
+    let _ = netaloSDK.application(application, didFinishLaunchingWithOptions: launchOptions)
+    return true
   }
   func applicationDidBecomeActive(_ application: UIApplication) {
     netaloSDK.applicationDidBecomeActive(application)
@@ -128,7 +133,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   func handleGetContacts() {
-    netaloSDK.getContacts(searchText: "SEARCH_TEXT", sortType: .sortByName, page: 1, pageSize: 20)
+    let contacts = netaloSDK.getContacts(searchText: "SEARCH_TEXT", sortType: .sortByName, page: 1, pageSize: 20)
+    XLog.print(contacts)
   }
   
   func openGallery() {

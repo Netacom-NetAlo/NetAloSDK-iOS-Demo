@@ -52,9 +52,9 @@ DEPENDENCIES:
   - GRKOpenSSLFramework (from `https://github.com/signalapp/GRKOpenSSLFramework`, branch `mkirk/1.0.2t`)
   - HKDFKit (from `https://github.com/signalapp/HKDFKit.git`)
   - Kingfisher (~> 5.15)
-  - Localize-Swift (from `http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift`)
-  - MessageKit (from `http://gitlab.ecdc.vn/hieubui/nt-messagekit`)
-  - NetaloCommonSDK (from `http://gitlab.ecdc.vn/hieubui/NetaloCommonSDK`, branch `lomo-v11`)
+  - Localize-Swift (from `https://github.com/thanhphong-tran/Localize-Swift`)
+  - MessageKit (from `https://github.com/thanhphong-tran/messagekit`)
+  - NetaloCommonSDK (from `https://github.com/thanhphong-tran/NetaloCommonSDK`, branch `lomo-v11`)
   - Reachability (~> 3.2)
   - RealmSwift (= 5.3.5)
   - ReSwift (~> 4.1.1)
@@ -92,12 +92,12 @@ EXTERNAL SOURCES:
   HKDFKit:
     :git: https://github.com/signalapp/HKDFKit.git
   Localize-Swift:
-    :git: http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift
+    :git: https://github.com/thanhphong-tran/Localize-Swift
   MessageKit:
-    :git: http://gitlab.ecdc.vn/hieubui/nt-messagekit
+    :git: https://github.com/thanhphong-tran/messagekit
   NetaloCommonSDK:
     :branch: lomo-v11
-    :git: http://gitlab.ecdc.vn/hieubui/NetaloCommonSDK
+    :git: https://github.com/thanhphong-tran/NetaloCommonSDK
   ReSwiftThunk:
     :git: https://github.com/thanhphong-tran/ReSwift-Thunk.git
     :tag: 1.1.1
@@ -119,13 +119,13 @@ CHECKOUT OPTIONS:
     :git: https://github.com/signalapp/HKDFKit.git
   Localize-Swift:
     :commit: 0af65d3b780e547074d6d9b992e2e27a98a9a35c
-    :git: http://gitlab.ecdc.vn/hieubui/nt-Localize-Swift
+    :git: https://github.com/thanhphong-tran/Localize-Swift
   MessageKit:
     :commit: 29bb4c4f94bacf966633ba25475a9700c9622e88
-    :git: http://gitlab.ecdc.vn/hieubui/nt-messagekit
+    :git: https://github.com/thanhphong-tran/messagekit
   NetaloCommonSDK:
     :commit: 125ee8c64ac950c2af528a8b1415f700765839b3
-    :git: http://gitlab.ecdc.vn/hieubui/NetaloCommonSDK
+    :git: https://github.com/thanhphong-tran/NetaloCommonSDK
   ReSwiftThunk:
     :git: https://github.com/thanhphong-tran/ReSwift-Thunk.git
     :tag: 1.1.1
@@ -157,6 +157,6 @@ SPEC CHECKSUMS:
   SwipeTransition: 16257f6afc59a572e3b4635a329b10f7598ad269
   ZIPFoundation: b1f0de4eed33e74a676f76e12559ab6b75990197
 
-PODFILE CHECKSUM: d1dc57863992ba3e7c333f2cd7b570c1d17d3b05
+PODFILE CHECKSUM: 20fdde1742fe6c3e66b79f8e6d3c1af199ddeb07
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

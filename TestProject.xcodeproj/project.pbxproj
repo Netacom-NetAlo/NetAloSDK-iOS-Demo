@@ -14,6 +14,7 @@
 		31958C1E2627E3E600D3576D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31958C1C2627E3E600D3576D /* LaunchScreen.storyboard */; };
 		31958C292627E3E700D3576D /* TestProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31958C282627E3E700D3576D /* TestProjectTests.swift */; };
 		31958C342627E3E700D3576D /* TestProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31958C332627E3E700D3576D /* TestProjectUITests.swift */; };
+		31A05E3C265E57A60083AF17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A05E3B265E57A60083AF17 /* SceneDelegate.swift */; };
 		7D1980C427B56CE66A1C2F20 /* Pods_TestProject_TestProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04B9E65888A87BF86957B7E /* Pods_TestProject_TestProjectUITests.framework */; };
 		B7419A1C39DFD013BC3FB5F4 /* Pods_TestProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94EA6B9EC78EBFAC8DA9C557 /* Pods_TestProjectTests.framework */; };
 		E156CF40863B325D85DB065A /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C425E3D18A57568E178D3E7E /* Pods_TestProject.framework */; };
@@ -51,6 +52,7 @@
 		31958C332627E3E700D3576D /* TestProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestProjectUITests.swift; sourceTree = "<group>"; };
 		31958C352627E3E700D3576D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31958CDA26282B2300D3576D /* TestProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestProject.entitlements; sourceTree = "<group>"; };
+		31A05E3B265E57A60083AF17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		43BC1BB603E4EB5FE947DCC8 /* Pods-TestProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectTests.release.xcconfig"; path = "Target Support Files/Pods-TestProjectTests/Pods-TestProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D5E7881797A87D9EE5D5497 /* Pods-TestProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-TestProjectTests/Pods-TestProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		94EA6B9EC78EBFAC8DA9C557 /* Pods_TestProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 			children = (
 				31958CDA26282B2300D3576D /* TestProject.entitlements */,
 				31958C112627E3E200D3576D /* AppDelegate.swift */,
+				31A05E3B265E57A60083AF17 /* SceneDelegate.swift */,
 				31958C152627E3E300D3576D /* ViewController.swift */,
 				31958C172627E3E300D3576D /* Main.storyboard */,
 				31958C1A2627E3E600D3576D /* Assets.xcassets */,
@@ -407,6 +410,7 @@
 			files = (
 				31958C162627E3E300D3576D /* ViewController.swift in Sources */,
 				31958C122627E3E200D3576D /* AppDelegate.swift in Sources */,
+				31A05E3C265E57A60083AF17 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
